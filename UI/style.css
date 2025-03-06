@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
+
+
 /* Style pour le body */
 body {
     background-image: url("image-pelouse.jpeg");
@@ -17,7 +20,7 @@ body {
     background-position: center;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
-    line-height: 1.45;
+    line-height: 1.17;
 }
 
 /* Style pour le header */
@@ -27,13 +30,43 @@ header {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
 }
 
 h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.pré-sélection-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.pré-sélection-container2 {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.pré-sélections-img {
+    width: 130px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pré-sélections-img:hover,
+.clubs-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Style pour la barre de navigation */
@@ -84,7 +117,6 @@ form a:hover {
     height: 90px;
     margin: 10px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .clubs-container {
@@ -118,25 +150,3 @@ footer p {
     margin: 0;
     color: black;
 }
-
-.pré-sélection-container {
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.pré-sélection-container2 {
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.pré-sélections-img {
-    width: 130px;
-    height: 90px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-
-

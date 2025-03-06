@@ -18,67 +18,78 @@
     <section>
         <h2>Les pré-sélections</h2>
         
+        <div class="pré-sélection-container">
+            <img src="logo-LDN.png" class="pré-sélections-img" alt="Logo LDN">
+            <p>Les Détections au numérique.fr est un site qui permet aux jeunes footballeurs de participer à des
+            pré-sélections pour intégrer les centres de formation des clubs professionnels de football.</p>
+        <p>Les pré-sélections sont organisées en partenariat avec la Fédération Française de Football (FFF) et la
+            Ligue de Football Professionnel (LFP).</p>
+        <p>Les clubs professionnels de Ligue 1 et de Ligue 2 participent aux détections organisées par la FFF. Les
+            clubs peuvent ainsi recruter de jeunes joueurs talentueux pour les intégrer à leur centre de formation.</p>
+        <p>Les clubs partenaires de notre site participent aux pré-sélections et sont donc libres d'accepter si oui ou
+            non le candidat passe à l'étape suivante du processus.</p>
+        <p>Les pré-sélections sont ouvertes à tous les jeunes footballeurs de 13 à 18 ans. Pour participer, il suffit
+            de partager des vidéos de tes matchs. Les vidéos seront visionnées par des recruteurs de clubs
+            professionnels qui pourront te proposer de participer à des détections.</p>
+        <p>Les vidéos doivent être de bonne qualité et montrer tes meilleures actions sur le terrain. Deux ou trois 
+        de quelques minutes suffisent pour donner une bonne impression de tes capacités. Assure-toi que les vidéos sont 
+        bien cadrées et que l'on peut facilement t'identifier sur le terrain.</p>
         <ul>
             <li>
-
-                <img src="logo-fff.png" alt="Logo FFF">
-                <p>La FFF organise des détections pour les jeunes footballeurs de 13 à 18 ans. Les détections sont
-                    organisées dans toute la France et permettent aux jeunes talents de se faire repérer par les clubs
-                    professionnels.</p>
+            </div>
+                <div class="pré-sélection-container">
+                <img src="logo-fff.png" class="pré-sélections-img" alt="Logo FFF">
+                <p>La Fédération Française de Football organise des détections pour les jeunes footballeurs de 13 à 18
+                    ans. Les détections sont organisées dans toute la France et permettent aux jeunes talents de se
+                    faire repérer par les clubs professionnels.</p>
             </li>
             <li>
-                <img src="logo-lfp.png" alt="Logo LFP">
-                <p>Les clubs professionnels de Ligue 1 et de Ligue 2 participent aux détections organisées par la FFF.
-                    Les clubs peuvent ainsi recruter de jeunes joueurs talentueux pour les intégrer à leur centre de
-                    formation.</p>
+                <div class="pré-sélection-container">
+                <img src="logo-lfp.png" class="pré-sélections-img" alt="Logo LFP">
+                <p>La Ligue de Football Professionnel (LFP) joue un rôle d'intermédiaire crucial en facilitant les échanges entre les jeunes talents et les clubs professionnels. 
+                    Elle organise des événements de détection et met en relation les recruteurs avec les joueurs prometteurs, assurant ainsi un processus de sélection transparent et efficace.</p>
             </li>
             <li>
-                <img src="logo-clubs.png" alt="Logo Clubs">
-                <p>Les clubs partenaires de la FFF participent aux détections et peuvent recruter des jeunes joueurs
-                    talentueux pour les intégrer à leur centre de formation.</p>
-            </li>
-            <li>
-                <img src="logo-LDN.png" alt="Logo Les Détections au numérique">
-                <p>Le site Les Détections au numérique.fr vous permet de participer à des pré-sélections en partageant des
-                    vidéos de tes matchs (deux ou trois vidéos seraient le top). Les vidéos seront visionnées par des
-                    recruteurs de clubs professionnels qui pourront te proposer de participer à des détections.</p>
+                <img src="logo-ligue1-2.jpg" alt="Logo Divisions 1 et 2">
+                <p>Les clubs partenaires de notre site participent aux pré-sélections et sont donc libres d'accepter si
+                    oui ou non lecandidat passe à l'étape suivante du processus et ainsi
+                    intégrer les plus talentueux à leur centre de formation.</p>
             </li>
         </ul>
     </section>
-        
+
     <div>
         <div class="formulaire-clubs">
-    <section>
-        <h2>Formulaire de candidature</h2>
-        <div class="form-container-title">
-            <p>Remplissez le formulaire ci-dessous pour candidater auprès de la FFF</p>
+            <section>
+                <h2>Formulaire de candidature</h2>
+                <div class="form-container-title">
+                    <p>Remplissez le formulaire ci-dessous pour candidater auprès de la FFF</p>
+                </div>
+                <div class="form-container"></div>
+                <form action="/submit" method="post">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="firstname">Prénom :</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="dob">Date de naissance :</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <label for="birthplace">Lieu de naissance :</label>
+                    <input type="text" id="birthplace" name="birthplace" required>
+                    <label for="adress">Adresse de résidence:</label>
+                    <input type="text" id="adress" name="adress" required>
+                    <label for="postal">Code postal</label>
+                    <input type="text" id="postal" name="postal" required>
+                    <label for="residence">Lieu de résidence :</label>
+                    <input type="text" id="residence" name="residence" required>
+                    <label for="club">Club préféré :</label>
+                    <input type="text" id="club" name="club">
+                    <input type="submit" value="Candidater">
+                </form>
         </div>
-        <div class="form-container"></div>
-            <form action="/submit" method="post">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="firstname">Prénom :</label>
-                <input type="text" id="firstname" name="firstname" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="dob">Date de naissance :</label>
-                <input type="date" id="dob" name="dob" required>
-                <label for="birthplace">Lieu de naissance :</label>
-                <input type="text" id="birthplace" name="birthplace" required>
-                <label for="adress">Adresse de résidence:</label>
-                <input type="text" id="adress" name="adress" required>
-                <label for="postal">Code postal</label>
-                <input type="text" id="postal" name="postal" required>
-                <label for="residence">Lieu de résidence :</label>
-                <input type="text" id="residence" name="residence" required>
-                <label for="club">Club préféré :</label>
-                <input type="text" id="club" name="club">
-                <input type="submit" value="Candidater">
-            </form>
-        </div>
-    </section>
+        </section>
 
-    <section>
         <h2>Tous les clubs partenaires</h2>
         <div class="clubs-container">
             <img src="logo-ajaccio.png" class="clubs-img" alt="Ajaccio CA">
@@ -87,19 +98,27 @@
             <img src="logo-auxerre.png" class="clubs-img" alt="AJ Auxerre">
             <img src="logo-bastia.png" class="clubs-img" alt="SC Bastia">
             <img src="logo-caen.png" class="clubs-img" alt="SM Caen">
-            <img src="logo-dunkerque.png" class="clubs-img" alt="USL Dunkerque">
-            <img src="logo-grenoble.png" class="clubs-img" alt="Grenoble Foot 38">
-            <img src="logo-guingamp.png" class="clubs-img" alt="EA Guingamp">
-            <img src="logo-fc-lorient.png" class="clubs-img" alt="FC Lorient">
             <img src="logo-clermont.png" class="clubs-img" alt="Clermont Foot 63">
+            <img src="logo-dunkerque.png" class="clubs-img" alt="USL Dunkerque">
+            <img src="logo-grenoble-foot.png" class="clubs-img" alt="Grenoble Foot 38">
+            <img src="logo-ea-guingamp.png" class="clubs-img" alt="EA Guingamp">
+            <img src="logo-stade-lavallois.png" class="clubs-img" alt="Stade Lavallois">
+            <img src="logo-fc-lorient.png" class="clubs-img" alt="FC Lorient"> 
+            <img src="logo-fc-martigues.png" class="clubs-img" alt="FC Martigues">
+            <img src="logo-fc-metz.png" class="clubs-img" alt="FC Metz">
             <img src="logo-paris-fc.png" class="clubs-img" alt="Paris FC">
+            <img src="logo-pau-fc.jpg" class="clubs-img" alt="Pau FC">
+            <img src="logo-red-star-fc.png" class="clubs-img" alt="Red Star FC">
+            <img src="logo-rodez-fc.png" class="clubs-img" alt="Rodez Aveyron FC">
+            <img src="logo-estac.png" class="clubs-img" alt="ESTAC Troyes">
+
             <!-- Ajoutez plus de logos de clubs ici -->
         </div>
-    </section>
+        </section>
     </div>
 
     <footer>
-        <p>Les détections au numérique.fr - 2021</p>
+        <p>Les détections au numérique.fr - Copyright - 2025</p>
     </footer>
 </body>
 

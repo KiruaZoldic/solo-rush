@@ -7,15 +7,21 @@
 
 html,
 body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
     width: 100%;
-    background-color: #00D619;
+    background-color: rgba(190, 190, 190, 0.849);
 }
 
+.logo-site-container {
+    padding: 10px;
+    max-width: fit-content;
+    max-block-size: none;
+    background-color: rgba(190, 190, 190, 0.849);
+}
 
 /* Style pour le body */
 body {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.02rem;
     color: black;
     line-height: 1.12rem;
@@ -25,11 +31,9 @@ body {
 header {
     padding: 10px 0;
     text-align: center;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
     line-height: 2rem;
 }
@@ -110,14 +114,14 @@ form a:hover {
 
 .clubs-img {
     margin: 10px;
+    width: 130px;
+    height: 100px;
 }
 
 .clubs-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgba(238, 238, 238, 0.836);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .formulaire-clubs {
@@ -129,6 +133,7 @@ form a:hover {
 
 .clubs-container {
     margin-top: 2px;
+    padding: 20px;
 }
 
 /* Style pour le footer */

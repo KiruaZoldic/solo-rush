@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -18,7 +19,9 @@ body {
     background-size: cover;
     background-position: center;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: smaller;
     color: black;
+    line-height: 1.5;
 }
 
 /* Style pour le header */
@@ -28,7 +31,12 @@ header {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
 }
@@ -44,8 +52,8 @@ h2 {
 }
 
 .pré-sélection-container2 {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 5px;
+    padding: 15px;
 }
 
 .pré-sélections-img {
@@ -56,7 +64,8 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.pré-sélections-img:hover, .clubs-img:hover {
+.pré-sélections-img:hover,
+.clubs-img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -135,10 +144,16 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: smaller;
+    color: black;
 }
 
 footer p {
     margin: 0;
     color: black;
+}
+
+.describe-you {
+    
 }

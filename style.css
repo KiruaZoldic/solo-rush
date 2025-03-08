@@ -15,8 +15,7 @@ body {
 
 .logo-site-container {
     padding: 10px;
-    max-width: fit-content;
-    max-block-size: none;
+    background-color: rgba(3, 3, 3, 0.836);
 }
 
 /* Style pour le body */
